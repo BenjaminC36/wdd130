@@ -1,0 +1,234 @@
+
+/* BJC PORTAL - MAIN STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Header */
+
+header {
+  background-color: #12355B;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header img {
+  width: 150px;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 4px solid #8FD3FF;
+  background-color: white;
+}
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+header h1 {
+  font-size: 38px;
+  margin: 15px 0 5px;
+}
+
+header p {
+  margin: 0;
+  color: #8FD3FF;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #1e293b;
+  padding: 15px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+  gap: 15px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #A78BFA;
+  color: #12355B;
+}
+
+/* Main Content */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #8FD3FF;
+}
+
+section:hover {
+  box-shadow: 0 8px 20px rgba(18, 53, 91, 0.15);
+}
+
+section h2 {
+  color: #12355B;
+  margin-top: 0;
+}
+
+#welcome {
+  grid-column: 1 / -1;
+  border-top-color: #A78BFA;
+}
+
+#ice {
+  grid-column: 1 / -1;
+}
+
+#contact {
+  grid-column: 1 / -1;
+}
+
+/* Lists */
+
+section ul {
+  padding-left: 25px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #12355B;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eef6ff;
+}
+
+tbody tr:hover {
+  background-color: #e4d9ff;
+}
+
+/* Contact Form */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 650px;
+}
+
+label {
+  font-weight: bold;
+  color: #12355B;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #A78BFA;
+}
+
+button {
+  background-color: #12355B;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #A78BFA;
+  color: #12355B;
+}
+
+/* Footer */
+
+footer {
+  background-color: #12355B;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 650px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  section {
+    grid-column: 1 / -1;
+  }
+}

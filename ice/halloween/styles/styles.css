@@ -1,0 +1,202 @@
+/* Add your CSS here to style your halloween page */
+/* HALLOWEEN WEBSITE DESIGN */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #08050f, #28103d, #100818);
+  background-attachment: fixed;
+  color: #f5e6d3;
+}
+
+/* Main Website Container */
+
+#wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: rgba(15, 8, 25, 0.9);
+  box-shadow: 0 0 50px rgba(162, 64, 255, 0.3);
+}
+
+/* Navigation Bar */
+
+header {
+  background-color: #160b24;
+  border-bottom: 3px solid #ff7518;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  color: #ff9b42;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: 2px solid #ff7518;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+nav li:hover {
+  background-color: #ff7518;
+  color: #160b24;
+  box-shadow: 0 0 20px #ff7518;
+  transform: translateY(-5px);
+}
+
+/* Main Content */
+
+main {
+  padding: 35px;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(40px, 7vw, 75px);
+  color: #ff7518;
+  text-shadow:
+    0 0 10px #ff7518,
+    0 0 25px #ff4500,
+    3px 3px 5px black;
+  margin: 20px 0 35px;
+  animation: spookyGlow 3s infinite alternate;
+}
+
+/* Halloween Image */
+
+main img {
+  display: block;
+  max-width: 100%;
+  width: 450px;
+  height: auto;
+  margin: 0 auto 45px;
+  border-radius: 20px;
+  border: 4px solid #ff7518;
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.5);
+  transition: transform 0.4s ease;
+}
+
+main img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Halloween Content Cards */
+
+section {
+  background: linear-gradient(145deg, #251238, #160b24);
+  border: 2px solid #8e44ad;
+  border-left: 7px solid #ff7518;
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin: 30px auto;
+  max-width: 850px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  border-color: #ff7518;
+  box-shadow: 0 0 25px rgba(255, 117, 24, 0.3);
+}
+
+h2 {
+  color: #ff9b42;
+  font-size: 32px;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px black;
+}
+
+section p {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #e6d9f2;
+}
+
+/* Halloween Icons */
+
+section:nth-of-type(1) h2::before {
+  content: "🎃 ";
+}
+
+section:nth-of-type(2) h2::before {
+  content: "🦇 ";
+}
+
+section:nth-of-type(3) h2::before {
+  content: "💀 ";
+}
+
+/* Footer */
+
+footer {
+  background-color: #160b24;
+  color: #ff9b42;
+  text-align: center;
+  padding: 25px;
+  font-size: 18px;
+  border-top: 3px solid #ff7518;
+}
+
+/* Spooky Animation */
+
+@keyframes spookyGlow {
+  from {
+    text-shadow: 0 0 8px #ff7518, 0 0 15px #ff4500;
+  }
+
+  to {
+    text-shadow:
+      0 0 20px #ff7518,
+      0 0 40px #ff4500,
+      0 0 60px #ff4500;
+  }
+}
+
+/* Mobile Friendly */
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  nav li {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

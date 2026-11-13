@@ -1,0 +1,154 @@
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #001f3f;
+  margin-top: 30px;
+}
+
+p {
+  color: #444;
+}
+
+/* Table Styling */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #001f3f;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e8f0f8;
+}
+
+tbody tr:hover {
+  background-color: #cce5ff;
+}
+
+/* Form Styling */
+
+form {
+  background-color: #e8f0f8;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 550px;
+  margin: 25px auto;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #001f3f;
+  margin: 15px 0 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #b0c4de;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #0074d9;
+  outline: none;
+  background-color: #fff;
+}
+
+button {
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0074d9;
+}
+
+/* Mobile Styling */
+
+@media (max-width: 600px) {
+  .content-box {
+    padding: 15px;
+  }
+
+  th, td {
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+
+  .header-image h1 {
+    font-size: 2.5em;
+  }
+}
